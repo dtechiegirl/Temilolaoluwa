@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.google.android.material.snackbar.Snackbar
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,12 @@ class LoginActivity : AppCompatActivity() {
                 val intent = Intent(this, HomeActivity::class.java)
                 this.startActivity(intent)
             }
+
+            Snackbar.make(findViewById(R.id.loginhost
+            ),message,
+                Snackbar.LENGTH_LONG
+            )
+                .show()
 
         }
 

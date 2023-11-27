@@ -30,7 +30,7 @@ class ForgotpasswordActivity : AppCompatActivity() {
                 message = "an email has been sent"
 
             }
-            Snackbar.make(findViewById(R.id.forgothost),"An email has been sent $emailfield",
+            Snackbar.make(findViewById(R.id.forgothost),message,
                 Snackbar.LENGTH_LONG
             )
                 .show()
