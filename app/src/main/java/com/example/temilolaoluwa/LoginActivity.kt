@@ -18,14 +18,8 @@ class LoginActivity : AppCompatActivity() {
         loginBtn.setOnClickListener{
             val userf : String = usernamefield.text.toString()
             val passf: String = passwordfield.text.toString()
+            var message = "";
             if (userf.isEmpty() and passf.isEmpty()){
-
-                // Hello Mr Anthony, hopefully you see this. I don't know why my message declaration
-//               is red. My condition works tho, i tried it with the intent activity below and it passed.
-               /*val intent = Intent(this, CreateNewActivity::class.java)
-                  this.startActivity(intent)
-                */
-
                 message = "fill the required fields"
             }else {
                 val intent = Intent(this, HomeActivity::class.java)

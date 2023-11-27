@@ -19,11 +19,12 @@ class ForgotpasswordActivity : AppCompatActivity() {
         val forgetbtn: MaterialButton = findViewById(R.id.btn1)
         val emailfield: EditText = findViewById(R.id.emailfield)
 
+        var message = "";
+
         forgetbtn.setOnClickListener{
             val userEmail : String = emailfield.text.toString()
             if (!userEmail.matches(Regex("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\$"))){
-//                Hello Mr Anthony, hopefully you see this. I don't know why my message declaration
-//                is red.
+
 
                 message = "Enter an email address"
             }else{
